@@ -1,6 +1,7 @@
 package AddressBook_Csv;
 
 
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -13,4 +14,12 @@ public class AddressBookCsvTest {
 		int readCSVContacts=addressBookCSVobject.readAddressBookFromCSVFile();
 		Assert.assertEquals(3,readCSVContacts);
 	} 
+	
+	 @Test
+	    public void givenThreeContacts_WhenWrittenAs_JSONFileShouldPassTheTest()
+	    {
+	    		AddressBookJson addressBookJSON=new AddressBookJson();
+	    		int numberOfContacts = addressBookJSON.readAddressBookFromAJSONFile("C:\\Users\\Mr_Robot\\Desktop\\Fellowship\\AddressBook_CSV_JSON\\lib\\src\\main\\resources\\AddressBookJSONTesting.json");
+	    		Assert.assertEquals(3, numberOfContacts);
+	    }
 }

@@ -32,9 +32,7 @@ public class AddressBookMain {
 	{
 		return contactMap;
 	}
-	/**
-	 * uc2
-	 */
+	
 	public void addNewContact() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter First Name of the contact");
@@ -64,9 +62,6 @@ public class AddressBookMain {
 		contactMap.put(firstName, con);
 	}
 
-	/**
-	 * uc3
-	 */
 	public void editContact() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter The First Name Whose contact details is to be Edited: ");
@@ -97,9 +92,8 @@ public class AddressBookMain {
 		System.out.println(contactArray);
 	}
 
-	/**
-	 * uc4
-	 */
+	
+
 	public void deleteContact() {
 		Scanner sd = new Scanner(System.in);
 		System.out.println("Enter The First Name to delete the contact details");
@@ -108,12 +102,7 @@ public class AddressBookMain {
 		contactArray.remove(obj);
 	}
 
-	/**
-	 * uc5
-	 * &uc 6
-	 *args
-	 * @param firstName 
-	 */
+	
 	public void  multipleAddressBook() {
 		Scanner sa = new Scanner(System.in);
 		for(int i=1;i>0;i++)
